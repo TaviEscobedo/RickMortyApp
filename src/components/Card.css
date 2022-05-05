@@ -1,0 +1,52 @@
+.card{
+    width: 200px;
+    /* height: 280px; */
+    background: rgb(255, 255, 255);
+    /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); */
+    border-radius: 8px;
+    margin:20px 25px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 16px 0px 0px; */
+    /* border: 1px solid sandybrown; */
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+.card> .state{
+    position: absolute;
+    right: 0;
+    top: 14px;
+    /* background-color: lawngreen; */
+    color: white;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+    font-size: 12px;
+}
+.live{
+    background: lawngreen;
+}
+.dead{
+    background: rgb(255, 35, 35);
+}
+.card> .cardImg{
+    width: 100%;
+    height: 180px;
+    background: rgb(165, 165, 165);
+    /* border-radius: 50%; */
+    object-fit:cover;
+    margin-bottom: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cardName >h2{
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: #2e2e2e;
+    /* font-weight: bold; */
+}
