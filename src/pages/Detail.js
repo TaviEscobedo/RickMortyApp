@@ -10,16 +10,22 @@ const Detail = () => {
 
  const url="https://rickandmortyapi.com/api/character"
 
-  const getCharacter=async()=>{
-    const res= await fetch(`${url}/${id}`)
-    const data =await res.json()
-    setPersonaje(data)
+  // const getCharacter=async()=>{
+  //   const res= await fetch(`${url}/${id}`)
+  //   const data =await res.json()
+  //   setPersonaje(data)
     
-  }
+  // }
 
   useEffect(() => {
+    const getCharacter=async()=>{
+      const res= await fetch(`${url}/${id}`)
+      const data =await res.json()
+      setPersonaje(data)
+      
+    }
    getCharacter()
-  }, [])
+  }, [id])
   
   return (
     <div className="container">
