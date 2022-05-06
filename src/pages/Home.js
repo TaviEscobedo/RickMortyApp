@@ -1,6 +1,7 @@
 import { useEffect ,useState} from 'react';
 import Card from '../components/Card';
 import Pagination from '../components/Pagination';
+import {Link} from "react-router-dom"
 import './Home.css';
 const Home=()=>{
 
@@ -40,7 +41,7 @@ const Home=()=>{
         />
         <div className="container">
             {characteres.map(el=>(
-                <Card char={el} key={el.id}/>
+              <Link to={`personaje/${el.id}`} key={el.id}><Card char={el} key={el.id}/></Link>  
             ))}
             
             

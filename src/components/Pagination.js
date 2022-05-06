@@ -10,8 +10,9 @@ const Pagination = ({prev,next,onPrev,onNext}) => {
         onNext()
     }
   return (
-    <div class="pagination">
-        {prev?<button onClick={handlePrev}>Anterior</button>:null}
+    <div className="pagination">
+        <button onClick={handlePrev} className={`${prev===null && "disabled"}`}>Anterior</button>
+        {/* {prev?<button onClick={handlePrev} className={`${prev===null && "disabled"}`}>Anterior</button>:null} */}
         {next?<button onClick={handleNext}>Siguiente</button>:null}    
     </div>
   )
